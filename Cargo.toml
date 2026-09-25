@@ -1,0 +1,13 @@
+[package]
+name = "gum-parser-py"
+version = "0.1.0"
+edition = "2021"
+description = "Python bindings for the Gum markup language parser"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+gum-core = { path = "../core" }
+pyo3 = { version = "0.22", features = ["extension-module"] }
+serde_json = "1.0"
